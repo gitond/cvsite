@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "node/express server for my portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Botond Ortutay",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

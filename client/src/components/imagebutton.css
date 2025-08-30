@@ -1,0 +1,11 @@
+.imgBtn{
+	padding: 0.25rem;
+}
+
+.btnIcon{
+	background-color: #172c56;
+	color: #ffffff;
+        height: 2rem;
+	padding: 0.25rem;
+        width: 2rem;
+}

@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  /* Everything in .App below this is added by me */
+  height: 100%;
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* Everything in .App-header below this is added by me */
+  /*display: block; /* edited, original -> display: flex; */
+  color: white;
+  padding: 1rem;
+  height: auto; /* Tweak this as necessary! */
+  box-sizing: border-box;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* New non-default stuff here */
+.App-body {
+  background-color: #282c34;
+  flex-grow: 1; /* take up remaining space */
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.content-placeholder {
+  background-color: #282c34;
+  /*height: 100%;*/
+}
+
+.inlineContainer{
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+}

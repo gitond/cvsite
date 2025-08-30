@@ -1,0 +1,28 @@
+.pictureCard{
+	color: white;
+	background-color: #172c56;
+	padding: 1rem;
+}
+
+.myFlexbox{
+	display: flex;
+	gap: 1rem;
+}
+
+/* If textbox needs own style
+.myTextbox{
+	margin-top: 0.5rem;
+}
+*/
+
+.textHighlighted {
+	background-color: #375a89;
+	padding: 0.5rem;
+}
+
+.portrait {
+	max-width: 15rem;
+	max-height: 30rem;
+/*	max-width: 480px;
+	max-height: 960px;*/
+}

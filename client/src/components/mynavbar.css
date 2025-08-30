@@ -1,0 +1,15 @@
+.navbar-container {
+  background-color: #172c56;
+  width: fit-content;
+  /*margin: 0.5rem;*/ /* Header padding is enough */
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar-button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
