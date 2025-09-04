@@ -26,18 +26,23 @@ function App() {
 	// Stuff that should be defined in frontend (page specific controls etc)
 	const navBarButtons = [
 		{id: 0, text: "Home", action(){console.log("Home");},},
-		{id: 1, text: "Projects",action(){console.log("Projects");},},
-		{id: 2, text: "Blog",action(){console.log("Blog");},},
-		{id: 3, text: "Contact Me",action(){console.log("Contact Me");},}
+		{id: 1, text: "Projects", action(){console.log("Projects");},},
+		{id: 2, text: "Blog", action(){console.log("Blog");},},
+		{id: 3, text: "Contact Me", action(){console.log("Contact Me");},}
 	];
 
 	const contactButtons = [
 		[
-			{src: cvSvg, alt: "CV"},
-			{src: linkedInSvg, alt: "LI"}
+			{src: cvSvg, alt: "CV", action(){
+				axios.get("http://localhost:" + BACKEND_PORT + "/cv").then((data) => {
+					//console.log(data.data);
+					window.open("data:application/pdf;base64," + data.data);
+				});
+			}},
+			{src: linkedInSvg, alt: "LI", action(){window.open("https://www.linkedin.com/in/botond-ortutay/", '_blank').focus();}}
 		],[
-			{src: gitSvg, alt: "Git"},
-			{src: blogSvg, alt: "BL"}
+			{src: gitSvg, alt: "Git", action(){window.open("https://github.com/gitond", '_blank').focus();}},
+			{src: blogSvg, alt: "BL", action(){console.log("BL");}}
 		]
 	];
 
