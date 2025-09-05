@@ -1,0 +1,27 @@
+h2 {
+	text-decoration: underline;
+	margin: 0.25rem;	
+}
+
+p {
+	margin: 0.25rem;	
+}
+
+.entryContainer{
+	color: #ffffff;
+	padding: 1rem;
+}
+
+.inlineContainer{
+	max-width: fit-content;
+	margin-inline: auto;
+	align-items: center;
+}
+
+.linkContainer{
+	text-decoration: underline;
+}
+
+.textBox{
+	background-color: #172c56;
+}
